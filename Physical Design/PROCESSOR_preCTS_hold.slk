@@ -1,0 +1,10 @@
+# Format:         clock                timeReq            slackR/slackF            holdR/holdF             instName/pinName          # cycle(s)
+             @(R)->clk_100MHz(R)	-0.108               0.301/*                  0.108/*         IFU_module_PC_reg[3]/RN           1 
+             @(R)->clk_100MHz(R)	-0.108               0.301/*                  0.108/*         IFU_module_PC_reg[2]/RN           1
+             @(R)->clk_100MHz(R)	-0.108               0.301/*                  0.108/*         IFU_module_PC_reg[4]/RN           1
+          clk_100MHz(R)->clk_100MHz(R)	-0.100               0.591/*                  0.100/*          IFU_module_PC_reg[2]/D           1
+          clk_100MHz(R)->clk_100MHz(R)	-0.057               */0.740                  */0.057          IFU_module_PC_reg[4]/D           1
+          clk_100MHz(R)->clk_100MHz(R)	-0.056               */0.746                  */0.056          IFU_module_PC_reg[3]/D           1
+
+
+
