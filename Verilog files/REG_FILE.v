@@ -29,10 +29,8 @@ module REG_FILE(
     integer i=0;
 
     //  When reset is triggered, we initialize the registers with some values
-    always @(posedge reset)
-    begin
-        // Bear with me for now, I tried using loops, but it won't work
-        // Just duct-taping this for now
+	always @(posedge clock)
+		if (reset) begin
          reg_memory[0] = 32'h0;
          reg_memory[1] = 32'h1;
          reg_memory[2] = 32'h2;
@@ -76,7 +74,6 @@ module REG_FILE(
     // If clock edge is positive and regwrite is 1, we write data to specified register
     always @(posedge clock)
     begin
-
         if (regwrite) begin
             reg_memory[write_reg] = write_data;
         end     
