@@ -19,6 +19,7 @@ module INST_MEM(
         if(reset == 1)
         begin
             // Setting 32-bit instruction: add t1, s0,s1 => 0x00940333 
+            // R-type integer register–register instruction - func3 =  add/sub group, func7 = add
             Memory[3] = 8'h00;
             Memory[2] = 8'h94;
             Memory[1] = 8'h03;
