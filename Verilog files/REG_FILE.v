@@ -26,7 +26,7 @@ module REG_FILE(
 );
 
     reg [31:0] reg_memory [31:0]; // 32 memory locations each 32 bits wide
-    integer i=0;
+    
 
     //  When reset is triggered, we initialize the registers with some values
 	always @(posedge clock)
