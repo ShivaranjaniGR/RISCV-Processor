@@ -22,7 +22,7 @@ module INST_MEM(
             Memory[3] = 8'h00;
             Memory[2] = 8'h94;
             Memory[1] = 8'h03;
-            Memory[0] = 8'h33;
+            Memory[0] = 8'h33; // write in reverse order as riscv uses little endian memory
             // Setting 32-bit instruction: sub t2, s2, s3 => 0x413903b3
             Memory[7] = 8'h41;
             Memory[6] = 8'h39;
