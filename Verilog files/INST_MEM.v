@@ -4,7 +4,7 @@ The memory is initialized when reset is 1.
 When reset is set to 0, Based on the value of PC, corresponding 32-bit Instruction code is output
 */
 module INST_MEM(
-    input [31:0] PC,
+    input [31:0] PC, // in RV32, memory space is 4GB, hence PC is 32 bits
     input reset,
     output [31:0] Instruction_Code
 );
